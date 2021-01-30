@@ -3,6 +3,6 @@ const generateConcursos = require("./genereteDataConcursos");
 
 const env = process.env.NODE_ENV || "development";
 
-cron.schedule("* * 1 * *", () => {
+cron.schedule("15 * * * *", () => {
 	if (env !== "development") { generateConcursos.GetListConcursos.v1(); }
 });
