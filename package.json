@@ -1,0 +1,30 @@
+{
+    "name": "web-scraping",
+    "version": "1.0.0",
+    "description": "",
+    "main": "server.js",
+    "scripts": {
+        "start": "set NODE_ENV=development && npm install && nodemon ./src/server.js",
+        "prod": "set NODE_ENV=production && npm install && node ./src/server.js"
+    },
+    "keywords": [
+        "redis",
+        "routines"
+    ],
+    "author": "mtaugusto",
+    "license": "ISC",
+    "dependencies": {
+        "cors": "^2.8.5",
+        "express": "^4.17.1",
+        "helmet": "^4.3.1",
+        "node-cron": "^2.0.3",
+        "puppeteer": "^5.5.0",
+        "redis": "^3.0.2"
+    },
+    "devDependencies": {
+        "eslint": "^7.16.0",
+        "eslint-config-airbnb-base": "^14.2.1",
+        "eslint-plugin-import": "^2.22.1",
+        "nodemon": "^2.0.6"
+    }
+}
